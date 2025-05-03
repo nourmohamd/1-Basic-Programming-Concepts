@@ -6,6 +6,22 @@ void a_type() {
 int b_type() {
     return 2;
 }
+// Examples:
+int sum(int x, int y) {
+    return x + y;
+}
+double avg(double x, double y, double z) {
+    return (x+y+z)/3;
+}
+int max(int x, int y, int z) {
+    int mx = x;
+    if(mx<y)
+        mx = y;
+    else if (mx<z)
+        mx = z;
+    return mx;
+}
+void print_hello();
 int main() {
     // Function Void, Return
     /*
@@ -20,4 +36,7 @@ int main() {
 
     return 0;
     system("PAUSE");
+}
+void print_hello() {
+    cout<<"Hello World!"<<endl;
 }
