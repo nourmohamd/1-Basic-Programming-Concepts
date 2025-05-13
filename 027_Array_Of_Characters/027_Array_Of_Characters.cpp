@@ -96,6 +96,12 @@ int main() {
     // 4 - strlen ===> For Get Length Of Array
     cout<<strlen(c1)<<endl;
 
+    // 5 - atoi(array) ===> Convert Array To Integer
+    char ch[] = "10000";
+    int num = atoi(ch);
+    cout<<num<<endl;
+    // 10000 ===> As Number
+
     return 0;
     system("PAUSE");
 }
