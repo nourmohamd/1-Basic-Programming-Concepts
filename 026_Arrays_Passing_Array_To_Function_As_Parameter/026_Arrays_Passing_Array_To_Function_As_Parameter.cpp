@@ -135,7 +135,7 @@ int main() {
         cout<<arr8[i]<<endl;
     }
 
-    // Ex9:
+    // Ex9: Reverse Array RTL TO LTR ( Right to left to Left to right )
     int arr9[7] = {1, 2, 3, 4, 5, 6, 7};
     for(int i=0;i<7/2;i++) {
         swap(arr9[i], arr9[7-i-1]);
@@ -147,7 +147,7 @@ int main() {
     const int arr10[5];
 
     // Passing Array To Function As Parameter
-    // Look To Top For Understand
+    // Look To Top For Understand This Concept
 
     // Calling print_array
     enter_array(arr6, 5);
