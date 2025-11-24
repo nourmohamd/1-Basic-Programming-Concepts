@@ -19,8 +19,10 @@ int main() {
     s();
     // The Number Of Students Is : 2
     s();
+    // The Number Of Students Is : 3
     s();
     // The Number Of Students Is : 3
+    // YES
 
     // Note: Without static keywords All Callings Get 1
 
