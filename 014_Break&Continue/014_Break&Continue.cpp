@@ -3,7 +3,7 @@ using namespace std;
 int main() {
     // Break && Continue
     // Break Uses For Break A Loop
-    // Continue Uses For
+    // Continue Uses For Ignore Some Values In Loop
     // Example: Break
     for(int i=1;i<=10;i++) {
         if(i == 4)
