@@ -1,0 +1,27 @@
+┌─────────────────────────────────────────────────────────┐
+│                    RECURSION                            │
+│      (A function that calls itself)                     │
+└─────────────────────────────────────────────────────────┘
+
+        ┌───────────────────────────────┐
+        │   factorial(n)                │
+        │   ┌─────────────────────────┐ │
+        │   │ if n == 1: return 1     │ │  ← BASE CASE
+        │   │ else:                   │ │     (stops recursion)
+        │   │   return n * factorial(n-1) │ │  ← RECURSIVE CASE
+        │   └─────────────────────────┘ │     (calls itself)
+        └───────────────┬───────────────┘
+                        │
+                        ▼
+              calls itself with smaller input
+
+
+
+┌────────────────────┐        ┌────────────────────────┐
+│    BASE CASE       │        │   RECURSIVE CASE       │
+│  (stopping rule)   │        │  (calls itself)        │
+├────────────────────┤        ├────────────────────────┤
+│ Prevents infinite  │        │ Breaks problem into    │
+│ loop. Must reach   │        │ smaller sub-problem    │
+│ it eventually.     │        │ of same type.          │
+└────────────────────┘        └────────────────────────┘
