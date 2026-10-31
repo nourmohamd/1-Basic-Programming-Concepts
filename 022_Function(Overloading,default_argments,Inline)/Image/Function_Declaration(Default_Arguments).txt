@@ -1,0 +1,41 @@
+FUNCTION DECLARATION
+┌──────────────────────────────────────────────┐
+│  void greet(string name = "Guest",           │
+│             int times = 1)                   │
+│                                              │
+│         ▲ default      ▲ default             │
+└──────────────────────────────────────────────┘
+
+CALLS                          RESULT
+─────────────────────────────────────────────
+greet();                    →  greet("Guest", 1)
+greet("Alice");             →  greet("Alice", 1)
+greet("Bob", 3);            →  greet("Bob", 3)
+greet(, 3);   ❌ ERROR      →  cannot skip first arg
+
+
+        Caller provides          Function receives
+        ─────────────────        ─────────────────
+        
+greet()              ┌───┐
+                     │ ? │──► uses DEFAULT "Guest"
+                     │ ? │──► uses DEFAULT 1
+                     └───┘
+
+greet("Alice")       ┌───────┐
+                     │"Alice"│──► provided
+                     │   ?   │──► uses DEFAULT 1
+                     └───────┘
+
+greet("Bob", 3)      ┌───────┐
+                     │ "Bob" │──► provided
+                     │   3   │──► provided
+                     └───────┘
+
+✅ VALID                          ❌ INVALID
+─────────────────────────────     ─────────────────────────────
+void f(int a, int b = 5);         void f(int a = 1, int b);
+void f(int a = 1, int b = 2);     void f(int a = 1, int b, int c = 3);
+                                             ▲
+                                  default before non-default
+                                  →  ERROR
