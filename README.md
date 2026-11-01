@@ -6,7 +6,7 @@ This is A Repository For Learning What is a Programming ?  -And- Why We Need It 
 1. Print Statements
 2. Escape Sequance
 3. DataTypes & Variables
-4. Priorities
+4. Priorities And Enter Value From User ( cin--->c++, scanf--->c )
 5. Calculation & Arithmetic Operators
 6. Type Casting
 7. Compound Assignment & Postfix & Prefix
