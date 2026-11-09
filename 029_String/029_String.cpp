@@ -1,6 +1,7 @@
 #include <iostream>
-#include <string>
-#include <cstring>
+#include <string> // For c++
+#include <string.h> // For C And Some Operation In C++
+#include <cstring> // For strcpy_s, strcom, strcat, strlen, ....
 using namespace std;
 int main() {
     // String
